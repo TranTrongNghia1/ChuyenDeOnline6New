@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -2096,6 +2097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
   m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
@@ -15426,6 +15428,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -294319140570622857, guid: e5af6f94457ab4f40b8a6bfa6f916363, type: 3}
+      propertyPath: SortKey
+      value: 1763375108
+      objectReference: {fileID: 0}
     - target: {fileID: 325510315638235665, guid: e5af6f94457ab4f40b8a6bfa6f916363, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15465,6 +15471,10 @@ PrefabInstance:
     - target: {fileID: 325510315638235665, guid: e5af6f94457ab4f40b8a6bfa6f916363, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333422167349869644, guid: e5af6f94457ab4f40b8a6bfa6f916363, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: KeyboardMouse
       objectReference: {fileID: 0}
     - target: {fileID: 9121084368173124023, guid: e5af6f94457ab4f40b8a6bfa6f916363, type: 3}
       propertyPath: m_Name
