@@ -1,9 +1,12 @@
+using Fusion;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public NetworkRunner _runner;
+    public NetworkSceneManagerDefault _sceneManager;
     [SerializeField] TMP_Text enemiesLeftText;
     [SerializeField] GameObject youWinText;
 
@@ -33,4 +36,30 @@ public class GameManager : MonoBehaviour
         Debug.LogWarning("Does not work in the Unity Editor!  You silly goose!");
         Application.Quit();
     }
+    //private void Awake()
+    //{
+    //    if (_runner == null)
+    //    {
+    //        GameObject runnerObj = new GameObject("NetworkRunner");
+    //        _runner = runnerObj.AddComponent<NetworkRunner>();
+    //        _runner.AddCallbacks(this);
+    //        _sceneManager = runnerObj.AddComponent<NetworkSceneManagerDefault>();
+    //    }
+    //}
+    //public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
+    //{
+    //    Debug.Log("A Player has joined:" + player);
+    //    if (_runner.LocalPlayer != player) return;
+
+    //    //spawn nguoi choi
+    //    _runner.Spawn(
+    //        prefab,
+    //        position,
+    //        Quaternion.identity,
+    //        player,
+    //        (r, o) =>
+    //        {
+
+    //        });
+    //}
 }

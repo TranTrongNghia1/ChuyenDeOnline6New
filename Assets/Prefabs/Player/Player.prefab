@@ -207,12 +207,12 @@ GameObject:
   m_Component:
   - component: {fileID: 325510315638235665}
   - component: {fileID: 1501433611999859894}
-  - component: {fileID: 7942493000897988529}
   - component: {fileID: 4049286453713352647}
   - component: {fileID: 9134620459181117455}
   - component: {fileID: 4333422167349869644}
   - component: {fileID: -294319140570622857}
   - component: {fileID: 8552508887421663516}
+  - component: {fileID: 498879872792779710}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -262,35 +262,6 @@ CharacterController:
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.93, z: 0}
---- !u!114 &7942493000897988529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9121084368173124023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 6
-  SprintSpeed: 10
-  RotationSpeed: 1
-  SpeedChangeRate: 10
-  JumpHeight: 1.5
-  Gravity: -15
-  JumpTimeout: 0.1
-  FallTimeout: 0.15
-  Grounded: 1
-  GroundedOffset: -0.14
-  GroundedRadius: 0.5
-  GroundLayers:
-    serializedVersion: 2
-    m_Bits: 1
-  CinemachineCameraTarget: {fileID: 2966052512860173769}
-  TopClamp: 89
-  BottomClamp: -89
 --- !u!114 &4049286453713352647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +416,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 8552508887421663516}
+  - {fileID: 498879872792779710}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &8552508887421663516
 MonoBehaviour:
@@ -463,6 +435,35 @@ MonoBehaviour:
   SyncParent: 0
   _autoAOIOverride: 1
   DisableSharedModeInterpolation: 0
+--- !u!114 &498879872792779710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121084368173124023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30951663860c313428bbee2f0eba2581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 4
+  SprintSpeed: 6
+  RotationSpeed: 1
+  SpeedChangeRate: 10
+  JumpHeight: 1.2
+  Gravity: -15
+  JumpTimeout: 0.1
+  FallTimeout: 0.15
+  _Grounded: 1
+  GroundedOffset: -0.14
+  GroundedRadius: 0.5
+  GroundLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  CinemachineCameraTarget: {fileID: 0}
+  TopClamp: 90
+  BottomClamp: -90
 --- !u!1001 &2244831762770447689
 PrefabInstance:
   m_ObjectHideFlags: 0
